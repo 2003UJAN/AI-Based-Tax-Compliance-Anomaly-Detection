@@ -6,7 +6,7 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
 # Load trained AutoEncoder model
-model = tf.keras.models.load_model("models/autoencoder_model")
+model = tf.keras.models.load_model("models/autoencoder_model.h5")
 
 # Streamlit UI
 st.set_page_config(page_title="🕵️ Tax Fraud Detector", page_icon="💰", layout="wide")
