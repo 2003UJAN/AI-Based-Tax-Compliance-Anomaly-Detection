@@ -4,7 +4,16 @@ Detect tax fraud, misreporting, or anomalies in financial transactions using AI!
 
 ## 📂 Project Structure
 
-📂 ai-tax-compliance-anomaly-detection │── 📂 data │ ├── synthetic_financial_data.csv # Sample dataset │── 📂 models │ ├── autoencoder_model.h5 # Trained AutoEncoder model │── 📂 utils │ ├── preprocess.py # Data preprocessing script │── app.py # Streamlit funky UI app │── train_model.py # AutoEncoder training script │── requirements.txt # Dependencies │── README.md # Project description
+📂 ai-tax-compliance-anomaly-detection 
+│── 📂 data │ 
+   ├── synthetic_financial_data.csv # Sample dataset 
+│── 📂 models │ 
+   ├── autoencoder_model.h5 # Trained AutoEncoder model 
+│── 📂 utils │ ├── preprocess.py # Data preprocessing script 
+│── app.py # Streamlit funky UI app 
+│── train_model.py # AutoEncoder training script 
+│── requirements.txt # Dependencies 
+│── README.md # Project description
 
 
 ## 🚀 Run the App
