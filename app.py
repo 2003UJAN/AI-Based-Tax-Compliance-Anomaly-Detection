@@ -41,7 +41,12 @@ if not os.path.exists(model_path):
     st.stop()
 
 try:
-    model = tf.keras.models.load_model(model_path)
+    # Register 'mse' (Mean Squared Error) as a custom function
+    custom_objects = {"mse": tf.keras.losses.MeanSquaredError()}
+
+    # Load model with custom loss function
+    model = tf.keras.models.load_model(model_path, custom_objects=custom_objects)
+    
     st.success("✅ AI Model Loaded Successfully!")
 except Exception as e:
     st.error(f"🚨 Error Loading Model: {e}")
